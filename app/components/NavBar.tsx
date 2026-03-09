@@ -18,7 +18,7 @@ const NavBar = () => {
       {/* Logo */}
       <div className="flex gap-3 items-center">
         <Image
-          src="/media/logo.png"
+          src="https://res.cloudinary.com/def3ghl5u/image/upload/v1773063814/logo_l1xn1j.png"
           alt="Logo"
           width={70}
           height={80}

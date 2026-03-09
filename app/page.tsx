@@ -15,7 +15,7 @@ import Footer from "./components/Footer";
 
 const Hero = ({ onExplore }: { onExplore: () => void }) => {
   return (
-    <div className="relative h-screen flex items-center justify-center overflow-hidden flex-wrap  ">
+    <div className="relative h-screen flex items-center justify-center overflow-hidden flex-wrap">
       <div className="absolute inset-0 z-0">
         <img
           src="https://images.unsplash.com/photo-1628158088936-68ccaaa400dc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGFuZCUyMHN1cnZleWluZyUyMEdJUyUyMGFuZCUyMG1hcHBpbmd8ZW58MHx8MHx8fDA%3D"
@@ -38,8 +38,8 @@ const Hero = ({ onExplore }: { onExplore: () => void }) => {
             & Comfort */}
           </h1>
           <p className="text-lg md:text-xl text-white/80 mb-10 font-light max-w-2xl mx-auto">
-            Experience an unforgettable services, where modern
-            equipments meets expected accuracy.
+            Experience an unforgettable services, where modern equipments meets
+            expected accuracy.
           </p>
           <button
             onClick={onExplore}
@@ -58,12 +58,11 @@ const Hero = ({ onExplore }: { onExplore: () => void }) => {
         >
           <div>
             <Image
-              src="/surveyor.png"
-              alt="Logo"
+              src="/media/survisiaq_ofo6px.png"
+              alt="Srurvey Observation"
               width={600}
               height={400}
             />
-            {/* <img src="https://images.unsplash.com/photo-1628158088936-68ccaaa400dc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGFuZCUyMHN1cnZleWluZyUyMEdJUyUyMGFuZCUyMG1hcHBpbmd8ZW58MHx8MHx8fDA%3D" /> */}
           </div>
         </motion.div>
       </div>

@@ -55,7 +55,7 @@ export default function AboutPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-5xl md:text-8xl font-serif text-white font-bold leading-tight mb-8"
+            className="text-4xl md:text-6xl font-serif text-white font-bold leading-tight py-32"
           >
             Defining the Future <br /> of Mapping.
           </motion.h1>
