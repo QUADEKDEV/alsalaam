@@ -24,7 +24,7 @@ import Footer from "./components/Footer";
 
 const Hero = ({ onExplore }: { onExplore: () => void }) => {
   return (
-    <div className="relative h-screen flex items-center justify-center overflow-hidden flex-wrap">
+    <div className="relative h-screen flex items-center justify-center overflow-hidden flex-wrap overflow-x-hidden">
       <div className="absolute inset-0 z-0">
         <img
           src="https://images.unsplash.com/photo-1628158088936-68ccaaa400dc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGFuZCUyMHN1cnZleWluZyUyMEdJUyUyMGFuZCUyMG1hcHBpbmd8ZW58MHx8MHx8fDA%3D"
