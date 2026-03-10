@@ -440,7 +440,7 @@ export default function Page() {
             </div>
           </div>
         </footer>
-        <Testimonialparallax />
+        {/* <Testimonialparallax /> */}
         <div className="mt-12">
           <Footer />
         </div>

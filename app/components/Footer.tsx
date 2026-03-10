@@ -11,7 +11,7 @@ const Footer = () => {
         </div>
         <p className="text-slate-500 text-sm hover:text-slate-50">
           {new Date().getFullYear()} Al-Salaam Geo-Mapping Surveying Ltd.|
-          <a>Developed by KADEK Multiservices Ltd.</a>
+          <a href="#" className="hover:text-amber-500 transition-colors" >Developed by KADEK Multiservices Ltd.</a>
         </p>
         <div className="mt-12 flex items-center gap-6 text-slate-400">
           <a href="#" className="hover:text-amber-500 transition-colors">
