@@ -27,7 +27,7 @@ const Testimonialparallax = () => {
         <img
           src="https://images.unsplash.com/photo-1545186070-de624ed19875?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c3VydmV5b3J8ZW58MHx8MHx8fDA%3D"
           alt=""
-          className="w-1/2"
+          className="w-full md:w-1/2"
         />
         <div className="text-black p-5 text-2xl font-medium">
           <p className="text-amber-500 leading-2">

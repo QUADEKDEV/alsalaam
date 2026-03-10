@@ -5,10 +5,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { motion,AnimatePresence } from "framer-motion";
-import { div } from "framer-motion/client";
 
 const NavBar = () => {
-   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const pathname = usePathname();
   const navLinks = [
