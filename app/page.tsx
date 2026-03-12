@@ -1,17 +1,7 @@
 "use client";
 import { useState, useEffect, Suspense } from "react";
 import NavBar from "./components/NavBar";
-import {
-  Star,
-  Coffee,
-  Calendar,
-  Users,
-  Check,
-  ArrowRight,
-  X,
-  CreditCard,
-  Loader2,
-} from "lucide-react";
+import {Star,Coffee,Calendar,Users,Check,ArrowRight,X,CreditCard,Loader2,} from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import ParallaxSection from "./components/Parallax";
@@ -21,34 +11,33 @@ import Testimonialparallax from "./components/Testimonialparallax";
 import { PRODUCTS } from "./utils/data";
 import { Product } from "./utils/types";
 import Footer from "./components/Footer";
-import Loader from "./components/Loader";
 
 
 const Hero = ({ onExplore }: { onExplore: () => void }) => {
   return (
-    <div className="relative h-screen flex items-center justify-center overflow-hidden flex-wrap">
+    <section className="relative h-screen flex items-center justify-center overflow-hidden flex-wrap">
       <div className="absolute inset-0 z-0">
         <img
           src="https://images.unsplash.com/photo-1628158088936-68ccaaa400dc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGFuZCUyMHN1cnZleWluZyUyMEdJUyUyMGFuZCUyMG1hcHBpbmd8ZW58MHx8MHx8fDA%3D"
           className="w-full h-full object-cover brightness-[0.2]"
         />
       </div>
-      <div className="relative z-10 text-center text-white px-4 max-w-4xl">
+      <div className="relative z-10 text-center text-white px-4 max-w-4xl mt-28">
         <motion.div
           initial={{ opacity: 0, y: 30, x: -250 }}
           animate={{ opacity: 1, y: 0, x: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <span className="uppercase tracking-[0.3em] text-sm font-medium text-amber-400 mb-4 block">
+          <span className="uppercase tracking-[0.3em] text-sm font-medium text-amber-400 mb-2 block">
             AL-SALAAM GEO-MAPPING SURVEYING LTD.
           </span>
-          <h1 className="text-3xl md:text-4xl font-serif font-bold mb-6 leading-tight">
+          <h1 className="text-3xl md:text-4xl font-serif font-bold mb-2 leading-tight">
             Precision Mapping,
             <br /> Future-Proof Engineering{" "}
             {/* Redefining Luxury <br />{" "}
             & Comfort */}
           </h1>
-          <p className="text-lg md:text-xl text-white/80 mb-10 font-light max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-white/80 mb-6 font-light max-w-2xl mx-auto">
             Experience an unforgettable services, where modern equipments meets
             expected accuracy.
           </p>
@@ -61,7 +50,7 @@ const Hero = ({ onExplore }: { onExplore: () => void }) => {
           </button>
         </motion.div>
       </div>
-      <div className="relative z-10 text-center text-white px-4 max-w-4xl">
+      <div className="relative z-10 text-center text-white px-4 max-w-4xl -mt-8 z-100">
         <motion.div
           initial={{ opacity: 0, y: 30, x: 250 }}
           animate={{ opacity: 1, y: 0, x: 0 }}
@@ -77,7 +66,7 @@ const Hero = ({ onExplore }: { onExplore: () => void }) => {
           </div>
         </motion.div>
       </div>
-    </div>
+    </section>
   );
 };
 
@@ -358,7 +347,7 @@ export default function Page() {
   };
 
   return (
-    <Suspense fallback={<Loader/>}>
+    <Suspense>
       <div className="min-h-screen bg-slate-50 font-sans selection:bg-amber-100 selection:text-amber-900">
         {/* <Navbar onOpenBooking={handleScrollToRooms} /> */}
         <NavBar />
