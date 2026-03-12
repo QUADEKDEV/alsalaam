@@ -21,6 +21,8 @@ import Testimonialparallax from "./components/Testimonialparallax";
 import { PRODUCTS } from "./utils/data";
 import { Product } from "./utils/types";
 import Footer from "./components/Footer";
+import Loader from "./components/Loader";
+
 
 const Hero = ({ onExplore }: { onExplore: () => void }) => {
   return (
@@ -356,7 +358,7 @@ export default function Page() {
   };
 
   return (
-    <Suspense fallback="Loading...">
+    <Suspense fallback={<Loader/>}>
       <div className="min-h-screen bg-slate-50 font-sans selection:bg-amber-100 selection:text-amber-900">
         {/* <Navbar onOpenBooking={handleScrollToRooms} /> */}
         <NavBar />
@@ -458,3 +460,4 @@ export default function Page() {
     </Suspense>
   );
 }
+
