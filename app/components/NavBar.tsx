@@ -92,7 +92,7 @@ const NavBar = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="fixed lg:hidden bg-white border-t mt-24 z-50 w-full"
+            className="fixed lg:hidden bg-white border-t mt-24 z-200 w-full"
           >
             <div className="flex flex-col p-6 space-y-4 text-slate-900 font-medium">
               {navLinks.map((link) => (
