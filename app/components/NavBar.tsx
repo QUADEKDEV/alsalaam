@@ -3,10 +3,17 @@ import { Phone,X,Menu } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import { motion,AnimatePresence } from "framer-motion";
 
 const NavBar = () => {
+  const [scrolled, setScrolled] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 50);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const pathname = usePathname();
   const navLinks = [
@@ -18,7 +25,11 @@ const NavBar = () => {
   ];
   return (
     <div>
-      <div className="py-5 lg:px-10 px-5 flex justify-between bg-slate-900 text-white fixed top-0 z-[100] w-full items-center">
+      <div
+        className={`py-5 lg:px-10 px-5 flex justify-between bg-slate-900 text-white fixed top-0 w-full items-center
+      ${scrolled ? "z-101" : "z-100"}
+       `}
+      >
         {/* Logo */}
         <div className="flex gap-3 items-center">
           <Image
@@ -90,8 +101,6 @@ const NavBar = () => {
                 </li>
               ))}
             </div>
-            
-             
           </motion.div>
         )}
       </AnimatePresence>

@@ -50,7 +50,7 @@ const Hero = ({ onExplore }: { onExplore: () => void }) => {
           </button>
         </motion.div>
       </div>
-      <div className="relative z-10 text-center text-white px-4 max-w-4xl -mt-8 z-100">
+      <div className="relative z-10 text-center text-white px-4 max-w-4xl -mt-8 z-[100]">
         <motion.div
           initial={{ opacity: 0, y: 30, x: 250 }}
           animate={{ opacity: 1, y: 0, x: 0 }}
