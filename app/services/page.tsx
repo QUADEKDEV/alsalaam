@@ -17,6 +17,7 @@ import {
   CheckCircle2,
   HardHat,
 } from "lucide-react";
+import Footer from "../components/Footer";
 
 const services = [
   {
@@ -214,19 +215,19 @@ export default function ServicePage() {
               4.9/5
             </p>
             <p className="text-xs uppercase tracking-widest text-slate-400 mt-2">
-              Guest Rating
+              Client Rating
             </p>
           </div>
           <div>
             <p className="text-2xl font-serif font-bold text-slate-900">24/7</p>
             <p className="text-xs uppercase tracking-widest text-slate-400 mt-2">
-              Butler Support
+               Support
             </p>
           </div>
           <div>
             <p className="text-2xl font-serif font-bold text-slate-900">100%</p>
             <p className="text-xs uppercase tracking-widest text-slate-400 mt-2">
-              Organic Linens
+              Guaranty
             </p>
           </div>
           <div>
@@ -237,6 +238,7 @@ export default function ServicePage() {
           </div>
         </div>
       </footer>
+      <Footer/>
     </div>
   );
 }

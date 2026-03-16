@@ -347,106 +347,106 @@ export default function Page() {
   };
 
   return (
-    <Suspense>
-      <div className="min-h-screen bg-slate-50 font-sans selection:bg-amber-100 selection:text-amber-900">
-        {/* <Navbar onOpenBooking={handleScrollToRooms} /> */}
-        <NavBar />
-        <Hero onExplore={handleScrollToRooms} />
-        {/* <Testimonials/> */}
+    <div className="min-h-screen bg-slate-50 font-sans selection:bg-amber-100 selection:text-amber-900">
+      {/* <Navbar onOpenBooking={handleScrollToRooms} /> */}
+      <NavBar />
+      <Hero onExplore={handleScrollToRooms} />
+      {/* <Testimonials/> */}
 
-        <section id="suites" className="py-24 px-6 max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <span className="text-amber-500 font-medium tracking-widest uppercase text-sm">
-              INSTRUMENTS
+      <section id="suites" className="py-24 px-6 max-w-7xl mx-auto">
+        <div className="text-center mb-16">
+          <span className="text-amber-500 font-medium tracking-widest uppercase text-sm">
+            INSTRUMENTS
+          </span>
+          <h2 className="text-4xl md:text-5xl font-serif font-bold text-slate-900 mt-3 mb-6">
+            Designed for Precision
+          </h2>
+          <p className="text-slate-500 max-w-2xl mx-auto text-lg font-light">
+            Our advanced surveying instruments are designed to deliver unmatched
+            precision, reliability, and efficiency in the field.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {PRODUCTS.map((product) => (
+            <RoomCard key={product.id} room={product} onBook={handleBook} />
+          ))}
+        </div>
+      </section>
+
+      <section className="bg-slate-900 text-white py-24 px-6">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+          <div>
+            <span className="text-amber-400 font-medium tracking-widest uppercase text-sm">
+              Precision Engineering & Geomatics
             </span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-slate-900 mt-3 mb-6">
-              Designed for Precision
+            <h2 className="text-4xl font-serif font-bold mt-3 mb-6">
+              Mapping the Future of Infrastructure.
             </h2>
-            <p className="text-slate-500 max-w-2xl mx-auto text-lg font-light">
-              Our advanced surveying instruments are designed to deliver
-              unmatched precision, reliability, and efficiency in the field.
+            <p className="text-slate-400 mb-8 leading-relaxed">
+              High-fidelity land surveying, LiDAR mapping, and GIS solutions
+              designed for developers, engineers, and government agencies.
             </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {PRODUCTS.map((product) => (
-              <RoomCard key={product.id} room={product} onBook={handleBook} />
-            ))}
-          </div>
-        </section>
-
-        <section className="bg-slate-900 text-white py-24 px-6">
-          <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-            <div>
-              <span className="text-amber-400 font-medium tracking-widest uppercase text-sm">
-                Precision Engineering & Geomatics
-              </span>
-              <h2 className="text-4xl font-serif font-bold mt-3 mb-6">
-                Mapping the Future of Infrastructure.
-              </h2>
-              <p className="text-slate-400 mb-8 leading-relaxed">
-                High-fidelity land surveying, LiDAR mapping, and GIS solutions
-                designed for developers, engineers, and government agencies.
-              </p>
-              <div className="grid grid-cols-2 gap-6">
-                <div className="flex items-center gap-3">
-                  <Coffee className="text-amber-400" />
-                  <span>Start your Survey</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <Star className="text-amber-400" />
-                  <span>View Capabilities</span>
-                </div>
-              </div>
-            </div>
-            <div className="relative h-96 rounded-3xl overflow-hidden shadow-2xl">
-              <img
-                src="https://media.istockphoto.com/id/1022533074/photo/drone-for-agriculture-drone-use-for-various-fields-like-research-analysis-safety-rescue.webp?a=1&b=1&s=612x612&w=0&k=20&c=YGsvxyjA7b6jJ885A8t5_HDLa1F1NshMTAkUeRIzhQg="
-                alt="Drone"
-                className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-              />
-            </div>
-          </div>
-        </section>
-        <ServicesSection />
-        <ParallaxSection />
-        <footer className="bg-slate-900 py-20 px-8">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl font-bold text-white mb-6">
-              Let’s Survey Your Next Success.
-            </h2>
-            <p className="text-slate-400 mb-10 text-lg">
-              Download our corporate profile or schedule a consultation with our
-              licensed engineers.
-            </p>
-            <div className="flex justify-center">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="px-6 py-4 rounded-l-xl bg-slate-800 border-none text-white w-full max-w-sm focus:ring-2 focus:ring-blue-500"
-              />
-              <button className="bg-blue-600 text-white px-8 py-4 rounded-r-xl font-bold hover:bg-blue-500 transition">
-                Go
+            <div className="grid grid-cols-2 gap-6">
+              <button className="w-full sm:w-auto px-10 py-5 bg-amber-500 text-white rounded-full font-bold hover:bg-amber-600 transition-all flex items-center justify-center gap-3 group">
+                Start your Survey
+                <ArrowRight
+                  size={20}
+                  className="group-hover:translate-x-1 transition-transform"
+                />
+              </button>
+              <button className="w-full sm:w-auto px-10 py-5 bg-white/10 backdrop-blur-md border border-white/20 text-white rounded-full font-bold hover:bg-white/20 transition-all">
+                View Capabilities
               </button>
             </div>
           </div>
-        </footer>
-        {/* <Testimonialparallax /> */}
-        <div className="mt-12">
-          <Footer />
-        </div>
-        {/* Logic Modal */}
-        <AnimatePresence>
-          {isModalOpen && (
-            <PaymentModal
-              room={selectedRoom}
-              isOpen={isModalOpen}
-              onClose={() => setIsModalOpen(false)}
+          <div className="relative h-96 rounded-3xl overflow-hidden shadow-2xl">
+            <img
+              src="https://media.istockphoto.com/id/1022533074/photo/drone-for-agriculture-drone-use-for-various-fields-like-research-analysis-safety-rescue.webp?a=1&b=1&s=612x612&w=0&k=20&c=YGsvxyjA7b6jJ885A8t5_HDLa1F1NshMTAkUeRIzhQg="
+              alt="Drone"
+              className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-700"
             />
-          )}
-        </AnimatePresence>
+          </div>
+        </div>
+      </section>
+      <ServicesSection />
+      <ParallaxSection />
+      <footer className="bg-slate-900 py-20 px-8">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl font-bold text-white mb-6">
+            Let’s Survey Your Next Success.
+          </h2>
+          <p className="text-slate-400 mb-10 text-lg">
+            Download our corporate profile or schedule a consultation with our
+            licensed engineers.
+          </p>
+          <div className="flex justify-center">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              className="px-6 py-4 rounded-l-xl bg-slate-800 border-none text-white w-full max-w-sm focus:ring-2 focus:ring-blue-500"
+            />
+            <button className="bg-blue-600 text-white px-8 py-4 rounded-r-xl font-bold hover:bg-blue-500 transition">
+              Go
+            </button>
+          </div>
+        </div>
+      </footer>
+      {/* <Testimonialparallax /> */}
+      <div className="mt-12">
+        <Footer />
       </div>
-    </Suspense>
+      {/* Logic Modal */}
+      <AnimatePresence>
+        {isModalOpen && (
+          <PaymentModal
+            room={selectedRoom}
+            isOpen={isModalOpen}
+            onClose={() => setIsModalOpen(false)}
+          />
+        )}
+      </AnimatePresence>
+    </div>
   );
 }
 

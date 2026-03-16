@@ -348,7 +348,7 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-bold text-slate-900">Call Us</h3>
                     <p className="text-sm text-slate-500 mt-1">
-                      +234 810 2007 604
+                      +234 810 2007 603
                     </p>
                     <p className="text-xs text-slate-400">Mon-Sun, 24/7</p>
                   </div>

@@ -10,6 +10,7 @@ import {
   ChevronRight,
 } from "lucide-react";
 import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
 
 // Sample Project Data
 const projects = [
@@ -191,6 +192,7 @@ const ProjectPage = () => {
           </button>
         </div>
       </section>
+      <Footer/>
     </div>
   );
 };
