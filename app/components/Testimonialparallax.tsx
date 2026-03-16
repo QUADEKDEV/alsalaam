@@ -1,4 +1,4 @@
-import React from "react";
+"use client"
 import Testimonial from "./Testimonial";
 import Image from "next/image";
 import { Phone } from "lucide-react";

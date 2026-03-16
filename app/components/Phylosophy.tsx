@@ -1,4 +1,4 @@
-import React from 'react'
+"use client"
 import { motion } from 'framer-motion';
 import {Award,Globe,Heart} from "lucide-react";
 const values = [

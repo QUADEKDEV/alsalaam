@@ -224,8 +224,10 @@ const ContactForm = () => {
           className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-amber-500 transition-all"
         >
           <option>General Inquiry</option>
-          <option>Survey Fee</option>
+
+          <option>Land Dispute</option>
           <option>Press & Media</option>
+          <option>Survey Fee</option>
         </select>
       </div>
 

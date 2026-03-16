@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import { motion } from "framer-motion";
 import {Map,Drill,Satellite,Compass,CheckCircle2,HardHat,ArrowRight,} from "lucide-react";

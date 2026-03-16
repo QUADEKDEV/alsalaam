@@ -1,4 +1,4 @@
-import React from 'react'
+"use client"
 import { motion } from "framer-motion";
 import {ChevronDown} from "lucide-react";
 
@@ -19,15 +19,15 @@ const Aboutheader = () => {
         <motion.span
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-amber-400 font-medium tracking-[0.4em] uppercase text-sm mb-6 block"
+          className="text-amber-400 font-medium tracking-[0.4em] uppercase text-sm mt-42 block"
         >
-          Since 1998
+          Since 2023
         </motion.span>
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
-          className="text-4xl md:text-6xl font-serif text-white font-bold leading-tight py-32"
+          className="text-4xl md:text-6xl font-serif text-white font-bold leading-tight py-6"
         >
           Defining the Future <br /> of Mapping.
         </motion.h1>

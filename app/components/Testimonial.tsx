@@ -1,4 +1,4 @@
-import React from "react";
+"use client"
 import { Counter } from "./Counter";
 import {motion} from "framer-motion"
 

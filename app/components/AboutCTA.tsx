@@ -1,5 +1,3 @@
-import React from 'react'
-
 const AboutCTA = () => {
   return (
     <section className="bg-amber-500 py-24 text-center">
@@ -14,5 +12,4 @@ const AboutCTA = () => {
     </section>
   );
 }
-
 export default AboutCTA

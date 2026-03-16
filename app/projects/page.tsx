@@ -67,7 +67,7 @@ const ProjectPage = () => {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="flex items-center justify-center gap-2 text-blue-400 mb-4 font-mono tracking-widest"
+            className="flex items-center justify-center gap-2 text-amber-500 mb-4 font-mono tracking-widest"
           >
             <Database size={18} />
             <span>AL-SALAAM GEO-MAPPING LTD</span>
