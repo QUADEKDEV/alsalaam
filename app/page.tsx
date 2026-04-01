@@ -26,7 +26,7 @@ const page = () => {
         {/* Floating Brand Mark (Mobile only) */}
         <div className="absolute top-6 left-6 lg:hidden z-10">
           <span className="text-xl font-serif font-bold text-white tracking-widest drop-shadow-md">
-            Royal Crest Hotel<span className="text-amber-400">.</span>
+           Alsalaam Geomaping Surveying ltd<span className="text-amber-400">.</span>
           </span>
         </div>
       </div>
@@ -76,12 +76,7 @@ const page = () => {
                 <RefreshCw size={18} /> Refresh Page
               </button>
 
-              <button
-                onClick={() => (window.location.href = "/")}
-                className="w-full sm:w-auto px-8 py-4 bg-white border border-slate-200 text-slate-600 rounded-xl hover:border-slate-300 hover:bg-slate-50 transition-all flex items-center justify-center gap-3 font-medium"
-              >
-                <ArrowLeft size={18} /> Return to Lobby
-              </button>
+             
             </div>
 
             {/* Footer Note */}
