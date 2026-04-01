@@ -26,7 +26,8 @@ const page = () => {
         {/* Floating Brand Mark (Mobile only) */}
         <div className="absolute top-6 left-6 lg:hidden z-10">
           <span className="text-xl font-serif font-bold text-white tracking-widest drop-shadow-md">
-           Alsalaam Geomaping Surveying ltd<span className="text-amber-400">.</span>
+            Alsalaam Geomaping Surveying ltd
+            <span className="text-amber-400">.</span>
           </span>
         </div>
       </div>
@@ -36,7 +37,8 @@ const page = () => {
         {/* Desktop Brand Mark */}
         <div className="absolute top-8 right-8 hidden lg:block">
           <span className="text-2xl font-serif font-bold text-slate-900 tracking-widest">
-            Royal Crest Hotel<span className="text-amber-600">.</span>
+            Alsalaam Geomaping Surveying ltd{" "}
+            <span className="text-amber-600">.</span>
           </span>
         </div>
 
@@ -75,8 +77,6 @@ const page = () => {
               >
                 <RefreshCw size={18} /> Refresh Page
               </button>
-
-             
             </div>
 
             {/* Footer Note */}
