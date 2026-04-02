@@ -18,10 +18,15 @@ const NavBar = () => {
   const pathname = usePathname();
   const navLinks = [
     { name: "Home", path: "/" },
-    { name: "About Us", path: "/about" },
-    { name: "Services", path: "/services" },
-    { name: "Projects", path: "/projects" },
-    { name: "Contact Us", path: "/contactus" },
+    { name: "About Us", path: "/" },
+    { name: "Services", path: "/" },
+    { name: "Projects", path: "/" },
+    { name: "Contact Us", path: "/" },
+
+    // { name: "About Us", path: "/about" },
+    // { name: "Services", path: "/services" },
+    // { name: "Projects", path: "/projects" },
+    // { name: "Contact Us", path: "/contactus" },
   ];
   return (
     <div>
