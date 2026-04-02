@@ -37,7 +37,7 @@ const page = () => {
         {/* Desktop Brand Mark */}
         <div className="absolute top-8 right-8 hidden lg:block">
           <span className="text-2xl font-serif font-bold text-slate-900 tracking-widest">
-            Alsalaam Geomaping Surveying ltd{" "}
+            Alsalaam Geomaping Surveying ltd {" "}
             <span className="text-amber-600">.</span>
           </span>
         </div>
