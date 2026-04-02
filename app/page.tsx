@@ -11,7 +11,7 @@ import Testimonialparallax from "./components/Testimonialparallax";
 import { PRODUCTS } from "./utils/data";
 import { Product } from "./utils/types";
 import Footer from "./components/Footer";
-
+//a
 const Hero = ({ onExplore }: { onExplore: () => void }) => {
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden flex-wrap">
@@ -377,7 +377,7 @@ export default function Page() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           <div>
             <span className="text-amber-400 font-medium tracking-widest uppercase text-sm">
-              Precision Engineering & Geomatics
+              Precision Engineering & Geomatics.
             </span>
             <h2 className="text-4xl font-serif font-bold mt-3 mb-6">
               Mapping the Future of Infrastructure.
